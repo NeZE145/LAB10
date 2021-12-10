@@ -1,24 +1,33 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-//Write the function printO() here
+string printO(int x,int y){
+	int i=0,j=0;string A,B;
+	if(x<=0||y<=0){
+		cout<<"Invalid input";
+	}else{
+	while(j<x){
+		while(i<y){
+			A=A+"O";
+			i++;
+		}
+	B=A;
+	cout << B<<endl;
+	j++;}
+	}
+	return B;
+}
+
+
+
+
 
 int main(){
 	
-	printO(2,2);
+	printO(3,5);
 	cout << "\n";
 	
-	printO(3,5);
-	cout << "\n";	
-	
-	printO(5,3);
-	cout << "\n";	
-	
-	printO(0,3);
-	cout << "\n";	
-	
-	printO(7,-1);
-	cout << "\n";	
 	
 	return 0;
 }
